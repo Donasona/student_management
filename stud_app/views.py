@@ -15,7 +15,7 @@ class Createstudentview(View):
                                email=request.POST.get('email'),
                                age=request.POST.get('age'),
                                course=request.POST.get('course'))
-        return render(request,"student_list.html")
+        return render(request,"student_form.html")
 
 # read
 
