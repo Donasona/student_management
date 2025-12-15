@@ -45,12 +45,12 @@ class Updatestudentview(View):
 
 # delete
 
-# class Deletestudentview(View):
-#     def get(self,request,**kwargs):
-#         delete_id=kwargs.get("pk")
-#         Student_data=Student.objects.get(id=delete_id)
-#         Student_data.delete()
-#         return render(request,"student_form.html")       
+class Deletestudentview(View):
+    def get(self,request,**kwargs):
+        delete_id=kwargs.get("pk")
+        Student_data=Student.objects.get(id=delete_id)
+        Student_data.delete()
+        return render(request,"student_form.html")       
 
 
 
