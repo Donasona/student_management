@@ -19,10 +19,10 @@ class Createstudentview(View):
 
 # read
 
-class Readstudentview(View):
-    def get(self,request):
-        data = Student.objects.all()
-        return render(request,"student_list.html",{'data':data})
+# class Readstudentview(View):
+#     def get(self,request):
+#         data = Student.objects.all()
+#         return render(request,"student_list.html",{'data':data})
     
 # update
 
